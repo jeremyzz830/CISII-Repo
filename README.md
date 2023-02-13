@@ -1,1 +1,1 @@
-Logs can be found at [log](./Docs/CIS II Project.md)
+Logs can be found at [log](Docs/CIS II Project.md)
