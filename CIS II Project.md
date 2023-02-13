@@ -38,3 +38,25 @@ Dependency: Need, Status, Followup, ContingencyPlan, Include Dates
 Dependency includes software access, hardware access, other people, money
 
 Timeline before 5.11
+
+
+
+### [Update Log]
+
+What exactly are we going to document? SyntheX .....
+
+
+
+
+
+### [Weekly Meeting Feb 13th, 2023]
+
+**What's the specific workflow?** - LoopX - SyntheX - ? - ?
+
+**Solutions to the data acquisition.**
+
+1. SanDisk Wireless Stick, need an app on my computer
+
+2. PACS
+
+What role does SyntheX play in this whole process? - Preparing dataset for other models?
