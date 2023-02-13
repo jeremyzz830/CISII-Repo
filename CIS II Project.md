@@ -51,7 +51,7 @@ What exactly are we going to document? SyntheX .....
 
 ### [Weekly Meeting Feb 13th, 2023]
 
-**What's the specific workflow?** - LoopX - SyntheX - ? - ?
+**What's the specific workflow?** - LoopX ->  SyntheX -> Registration Grupp 
 
 **Solutions to the data acquisition.**
 
@@ -60,3 +60,17 @@ What exactly are we going to document? SyntheX .....
 2. PACS
 
 What role does SyntheX play in this whole process? - Preparing dataset for other models?
+
+
+
+Tasks TODO:
+
+Make a Slides to Ben before the presentation
+
+Make documentation and explain the whole pipeline for SnytheX.
+
+Integrate SytheX in a docker image
+
+IRB is not a dependency.
+
+Find landmarks with SyntheX-made X-Ray 
