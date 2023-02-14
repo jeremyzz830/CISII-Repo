@@ -2,9 +2,11 @@
 
 - 2.24 A 5-8 page proposal
 
+# [Update Logs] 
 
+<u>Feb 01, 2023</u>
 
-## Questions Regarding the LoopX
+### Questions Regarding the LoopX
 
 1. Is the connection between the navigation system and the teaching pendant fixed?
 2. Is it possible to write some script on the windows environment of the Loop-X?
@@ -23,7 +25,9 @@
 
 
 
-### [Update Comments] Feb 09, 2023
+# [Update Comments] 
+
+<u>Feb 09, 2023</u>
 
 Print out a paper form handout for the Slides. Add Group Number
 
@@ -41,17 +45,19 @@ Timeline before 5.11
 
 
 
-### [Update Log]
+# [Update Log] 
+
+<u>Feb 11, 2023</u>
 
 What exactly are we going to document? SyntheX .....
 
 
 
+# [Weekly Meeting] 
 
+<u>Feb 13, 2023</u>
 
-### [Weekly Meeting Feb 13th, 2023]
-
-**What's the specific workflow?** - LoopX ->  SyntheX -> Registration Grupp 
+**What's the specific workflow?** - LoopX ->  SyntheX -> Registration by Grupp 
 
 **Solutions to the data acquisition.**
 
@@ -63,14 +69,21 @@ What role does SyntheX play in this whole process? - Preparing dataset for other
 
 
 
-Tasks TODO:
+### Tasks TODO:
 
-Make a Slides to Ben before the presentation
+Make Slides and demonstrate to Ben before the presentation before the next meeting.
 
-Make documentation and explain the whole pipeline for SnytheX.
-
-Integrate SytheX in a docker image
+Make documentation and explain the whole pipeline for SnytheX. Integrate SytheX in a docker image.(Possibly)
 
 IRB is not a dependency.
 
-Find landmarks with SyntheX-made X-Ray 
+Find landmarks with SyntheX-made X-Ray images, then solve the 2D-3D registration based on what Robert Group has developed.
+
+
+
+# [Update Log] 
+
+<u>Feb 14, 2023</u>
+
+Don't use the word "study". Use analyze instead.
+
