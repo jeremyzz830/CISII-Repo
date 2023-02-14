@@ -87,3 +87,4 @@ Find landmarks with SyntheX-made X-Ray images, then solve the 2D-3D registration
 
 Don't use the word "study". Use analyze instead.
 
+Clearly state the name of the mentor who would provide the dependency.
