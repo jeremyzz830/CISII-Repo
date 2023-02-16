@@ -88,3 +88,17 @@ Find landmarks with SyntheX-made X-Ray images, then solve the 2D-3D registration
 Don't use the word "study". Use analyze instead.
 
 Clearly state the name of the mentor who would provide the dependency.
+
+
+
+# [Update Log]
+
+<u>Feb 16, 2023</u>
+
+Clearly statement of the allocation of duties.
+
+Deliverable is not an activity, is a prototype, documentation, report, code repo, manuscript
+
+What's my input and output, what's his input and output, and when should team members meet
+
+the dependency is provided by who.
