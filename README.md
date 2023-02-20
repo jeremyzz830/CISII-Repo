@@ -4,3 +4,5 @@ This is the repository for the CIS II Project: **Real-time Integration of Fully 
 
 This repo provides a pipeline for integrating [SyntheX](https://github.com/arcadelab/SyntheX) and [Regi2D3D](https://github.com/rg2/Regi2D3D-IPCAI2020)
 
+An example of integration can be found [here](https://github.com/gaocong13/Orthopedic-Robot-Navigation)
+
