@@ -6,3 +6,5 @@ This repo provides a pipeline for integrating [SyntheX](https://github.com/arcad
 
 An example of integration can be found [here](https://github.com/gaocong13/Orthopedic-Robot-Navigation)
 
+Segmentation can be done over [TotalSegmentator](https://github.com/wasserth/TotalSegmentator)
+
