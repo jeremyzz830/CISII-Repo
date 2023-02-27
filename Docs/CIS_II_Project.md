@@ -113,11 +113,11 @@ The communications of the specification of the interfaces between the group memb
 
 
 
-# [Update Log]
+# [Weekly Meeting]
 
-Feb 27, 2023
+<u>Feb 27, 2023</u>
 
-exact data format that are echanging
+exact data format that are exchanging
 
 a outline of python scripts
 
@@ -136,9 +136,9 @@ class RegiInput()
 class RegiOutput()
 ```
 
-no dependency between two functionality
+no dependency between two functionality, we can use the data to test our code separately.
 
-moduler the synthex function to allow future change of package
+Modularize the call_synthex function to allow future substitution of syntheX
 
 h5 viewer/h5py can open h5 file : Document all the structure of the h5 out
 
