@@ -102,3 +102,46 @@ Deliverable is not an activity, is a prototype, documentation, report, code repo
 What's my input and output, what's his input and output, and when should team members meet
 
 the dependency is provided by who.
+
+
+
+# [Update Log]
+
+<u>Feb 23, 2023</u>
+
+The communications of the specification of the interfaces between the group members
+
+
+
+# [Update Log]
+
+Feb 27, 2023
+
+exact data format that are echanging
+
+a outline of python scripts
+
+```python
+def import_image()
+	pass
+def call_syntheX()
+	return image, landmark
+def call_xreg()
+	pass
+
+
+class LandmarkDetectionInput()
+class LandmarkDetectionOutput()
+class RegiInput()
+class RegiOutput()
+```
+
+no dependency between two functionality
+
+moduler the synthex function to allow future change of package
+
+h5 viewer/h5py can open h5 file : Document all the structure of the h5 out
+
+pack everything in a sole package so that we can pip install whatever we build
+
+Sim2Real meaning training: 
