@@ -145,3 +145,11 @@ h5 viewer/h5py can open h5 file : Document all the structure of the h5 out
 pack everything in a sole package so that we can pip install whatever we build
 
 Sim2Real meaning training on the simulation dataset ( input <u>synthetic image</u> + <u>labelled synthetic image</u> pairs )
+
+
+
+# [Update Log]
+
+Mar 02, 2023
+
+One paper per member.
