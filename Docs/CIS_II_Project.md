@@ -136,15 +136,15 @@ class RegiInput()
 class RegiOutput()
 ```
 
-no dependency between two functionality, we can use the data to test our code separately.
+We can use the data to test our code separately without dependency between two functionality.
 
-Modularize the call_synthex function to allow future substitution of syntheX
+Modularize the call_synthex function to allow future substitution of SyntheX
 
 h5 viewer/h5py can open h5 file : Document all the structure of the h5 out
 
-pack everything in a sole package so that we can pip install whatever we build
+pack everything in a sole package so that we can pip-install whatever we build
 
-Sim2Real meaning training on the simulation dataset ( input <u>synthetic image</u> + <u>labelled synthetic image</u> pairs )
+Sim2Real meaning training on the simulation dataset ( input <u>synthetic image</u> + <u>labeled synthetic image</u> pairs )
 
 
 
@@ -153,3 +153,16 @@ Sim2Real meaning training on the simulation dataset ( input <u>synthetic image</
 Mar 02, 2023
 
 One paper per member.
+
+Documentation for the total workflow functionalities should be done now.
+
+Figs mush come with proper citation right below where you use it.
+
+
+
+# [Weekly Meeting]
+
+Nifty file use this for now. Don't modify all the data. Segmentation, landmark in json format.
+
+Intensity-based method can gain more control on the edge of the bone.
+
