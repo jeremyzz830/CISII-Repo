@@ -166,3 +166,13 @@ Nifty file use this for now. Don't modify all the data. Segmentation, landmark i
 
 Intensity-based method can gain more control on the edge of the bone.
 
+
+
+# [Update Log]
+
+Mar 09 2023
+
+Explain the terms before every presentation!!!
+
+Better don't bring scripts. Memorize it!
+
