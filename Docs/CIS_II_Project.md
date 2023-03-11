@@ -176,3 +176,5 @@ Explain the terms before every presentation!!!
 
 Better don't bring scripts. Memorize it!
 
+To be clear and concise in the citation, especially in the report.
+
