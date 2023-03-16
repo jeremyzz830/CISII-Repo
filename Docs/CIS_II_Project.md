@@ -1,17 +1,19 @@
 <h1 align="center">Project Logs</h1>
 
-- 2.24 A 5-8 page proposal
+> Print out the slides in a 6 page format
+>
+> A print version of the papers is also preferred
 
 # [Update Logs] 
 
 <u>Feb 01, 2023</u>
 
-### Questions Regarding the LoopX
+### Questions Regarding the Loop-X
 
 1. Is the connection between the navigation system and the teaching pendant fixed?
 2. Is it possible to write some script on the windows environment of the Loop-X?
 3. Can we directly save our file to the local driver and get access to it from the local environment?
-4. Can the teaching pendant set up a public network, i.e. WAN, except for the local network?
+4. Can the teaching pendant set up a public network, i.e., WAN, except for the local network?
 5. Can the navigation system be customized? For example, adding some script.
 
 
@@ -21,7 +23,7 @@
 1. Script on Teaching Pendant
 2. ssh to the teaching pendant
 3. Script on the Navigation Platform and use a wireless stick to set up a private WAN
-4. SanDisk Wireless Stick, need an app on my computer
+4. SanDisk Wireless Stick, need an App on my computer
 
 
 
@@ -177,4 +179,16 @@ Explain the terms before every presentation!!!
 Better don't bring scripts. Memorize it!
 
 To be clear and concise in the citation, especially in the report.
+
+
+
+# [Update Log]
+
+Mar 16 2023
+
+Talk about how many milestones have been done.
+
+Progress: 
+
+Modified key milestones a little bit. Implementation for submodules are done, which is our minimum deliverable, now I'm working on the integration part, and according to our timeline, we should get it done by the end of march.
 
