@@ -65,7 +65,7 @@ the virtual env has to be switched in advance to enable the package for reading 
 
 ## SyntheX data format
 
-example real.h5
+example real.h5: Used as an input to syntheX from dicom images
 ```python
 keys:['01', '02', '03', '04', '05', '06', 'land-names']:
    "01"--> 'projs'--> <HDF5 dataset "projs": shape (111, 360, 360), type "<f4">
@@ -77,8 +77,9 @@ keys:['01', '02', '03', '04', '05', '06', 'land-names']:
    "land-names" keys --> ['land-00', 'land-01', 'land-02', 'land-03', 'land-04', 'land-05', 'land-06', 'land-07', 'land-08', 'land-09', 'land-10', 'land-11', 'land-    12', 'land-13', 'num-lands']>:
       'num-lands'--> 14
       'land-00'--> FH-l
+       ...
 ```
-example real_label.h5
+example real_label.h5: 
 ```python
 keys:['01', '02', '03', '04', '05', '06', 'land-names', 'proj-params']
   "01" keys: ['gt-poses', 'lands', 'segs']>
@@ -86,6 +87,7 @@ keys:['01', '02', '03', '04', '05', '06', 'land-names', 'proj-params']
                      "gt-poses"--> <HDF5 dataset "000": shape (4, 4), type "<f4">
       'lands' --><HDF5 dataset "lands": shape (111, 2, 14), type "<f4">
       'segs' --><HDF5 dataset "segs": shape (111, 360, 360), type "|u1">
+      ...
 ```
 
    
