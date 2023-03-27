@@ -7,9 +7,27 @@ This file documents all the necessary information about developing
 - extract 2d landmarks from the output of synthex 
 - write fcsv file
 
+
+
+# Developed Features
+
+- [x] image conversion from dicom to synthex required h5
+- [x] 2D annotation result decoded from the resulting h5 of synthex
+- [x] 3D landmarks conversion to the required format of xReg
+- [x] image conversion from dicom to xReg required h5
+- [x] scripts to call synthex to annotate and call xReg to get registration result
+
+
+
+- [ ] modularized classed to contain everything
+- [ ] environment compatibility check
+- [ ] integrate into a full pip package
+
+
+
+
+
 ## Write ipynb file to read h5 file
-
-
 
 the virtual env has to be switched in advance to enable the package for reading h5, here are the steps of switching venv for jupyter notebook
 
