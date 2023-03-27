@@ -3,11 +3,13 @@
 This file documents all the necessary information about developing 
 
 - Write ipynb file to read h5 file
-- 
+- transform dicom image to numpy array and then write it to h5
+- extract 2d landmarks from the output of synthex 
+- write fcsv file
 
-## [Dev log Mar 1, 2023]
+## Write ipynb file to read h5 file
 
-Write ipynb file to read h5 file
+
 
 the virtual env has to be switched in advance to enable the package for reading h5, here are the steps of switching venv for jupyter notebook
 
@@ -43,6 +45,8 @@ the virtual env has to be switched in advance to enable the package for reading 
 
 
 
+## SyntheX data format
+
 example real.h5
 ```python
 keys:['01', '02', '03', '04', '05', '06', 'land-names']:
@@ -74,3 +78,10 @@ name of the landmarks:
 ['FH-l', 'FH-r', 'GSN-l', 'GSN-r', 'IOF-l', 'IOF-r', 'MOF-l', 'MOF-r', 'SPS-l', 'SPS-r', 'IPS-l', 'IPS-r', 'ASIS-l', 'ASIS-r']
 ```
 
+
+
+## xReg Data Format
+
+### FCSV
+
+'id' and 'associatedNodeID' are not necessary for xReg, it should be some labels that come from the landmark annotation process in 3DSlicer
