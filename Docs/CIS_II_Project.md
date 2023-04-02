@@ -192,3 +192,14 @@ Progress:
 
 Modified key milestones a little bit. Implementation for submodules are done, which is our minimum deliverable, now I'm working on the integration part, and according to our timeline, we should get it done by the end of march.
 
+
+
+# [Update Log]
+
+Mar 27, 2023
+
+- integrate into a full pip package:
+  - method 1: instruction for installing the xReg aside
+  - method 2: integrate the binary of xReg into a pipy work flow and make wheels of building it
+- colab script to demonstrate how the code works, include one image
+- loop-x image frame, navigation frame, ct and x-ray image frame : RAS/LAS
