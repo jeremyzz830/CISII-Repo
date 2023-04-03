@@ -83,19 +83,42 @@ Python provides [h5py](https://docs.h5py.org/en/stable/) lib to process h5 files
 
 example real.h5: Used as an input to syntheX from dicom images
 
-```python
-keys:['01', '02', '03', '04', '05', '06', 'land-names']:
-   "01"--> 'projs'--> <HDF5 dataset "projs": shape (111, 360, 360), type "<f4">
-   "02"--> 'projs'--> <HDF5 dataset "projs": shape (103, 360, 360), type "<f4">
-   "03"--> 'projs'--> <HDF5 dataset "projs": shape (24, 360, 360), type "<f4">
-   "04"--> 'projs'--> <HDF5 dataset "projs": shape (48, 360, 360), type "<f4">
-   "05"--> 'projs'--> <HDF5 dataset "projs": shape (55, 360, 360), type "<f4">
-   "06"--> 'projs'--> <HDF5 dataset "projs": shape (24, 360, 360), type "<f4">
-   "land-names" keys --> ['land-00', 'land-01', 'land-02', 'land-03', 'land-04', 'land-05', 'land-06', 'land-07', 'land-08', 'land-09', 'land-10', 'land-11', 'land-    12', 'land-13', 'num-lands']>:
-      'num-lands'--> 14
-      'land-00'--> FH-l
-       ...
+``` python
+├── '01'
+│    └──  'projs' <HDF5 Dataset>
+├── '02'
+│    └── 'projs' <HDF5 Dataset>
+├── '03'
+│   └── 'projs' <HDF5 Dataset>
+├── '04'
+│    └──  'projs' <HDF5 Dataset>
+├── '05'
+│    └── 'projs' <HDF5 Dataset>
+├── '06'
+│    └──  'projs' <HDF5 Dataset>
+├── 'land-names'
+│   ├── 'land-00' <HDF5 Dataset>
+│   ├── 'land-01' <HDF5 Dataset>
+│   ├── 'land-02' <HDF5 Dataset>
+│   ├── 'land-03' <HDF5 Dataset>
+│   ├── 'land-05' <HDF5 Dataset>
+│   ├── 'land-06' <HDF5 Dataset>
+│   ├── 'land-07' <HDF5 Dataset>
+│   ├── 'land-08' <HDF5 Dataset>
+│   ├── 'land-09' <HDF5 Dataset>
+│   ├── 'land-10' <HDF5 Dataset>
+│   ├── 'land-11' <HDF5 Dataset>
+│   ├── 'land-12' <HDF5 Dataset>
+│   ├── 'land-13' <HDF5 Dataset>
+│   └──  'num-lands' <HDF5 Dataset>
+
 ```
+
+
+
+
+
+
 example real_label.h5: 
 ```python
 keys:['01', '02', '03', '04', '05', '06', 'land-names', 'proj-params']
