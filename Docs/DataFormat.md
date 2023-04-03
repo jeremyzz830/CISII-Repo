@@ -130,7 +130,49 @@ keys:['01', '02', '03', '04', '05', '06', 'land-names', 'proj-params']
       ...
 ```
 
+``` python
+├── '01'
+│   ├── 'gt-poses'
+│   |     └──  ['000',['001'],['002']....]
+│   |     |      └──  <HDF5 Dataset>
+│   ├── 'lands'
+│   |     └──  <HDF5 Dataset>
+│   ├── 'segs'
+│   |     └──  <HDF5 Dataset>
+├── '02'
+│    └── same as '01'
+├── '03'
+│   └── ...
+├── '04'
+│    └──  ...
+├── '05'
+│    └── ...
+├── '06'
+│    └──  ...
+├── 'land-names'
+│   ├── 'land-00' <HDF5 Dataset>
+│   ├── 'land-01' <HDF5 Dataset>
+│   ├── 'land-02' <HDF5 Dataset>
+│   ├── 'land-03' <HDF5 Dataset>
+│   ├── 'land-05' <HDF5 Dataset>
+│   ├── 'land-06' <HDF5 Dataset>
+│   ├── 'land-07' <HDF5 Dataset>
+│   ├── 'land-08' <HDF5 Dataset>
+│   ├── 'land-09' <HDF5 Dataset>
+│   ├── 'land-10' <HDF5 Dataset>
+│   ├── 'land-11' <HDF5 Dataset>
+│   ├── 'land-12' <HDF5 Dataset>
+│   ├── 'land-13' <HDF5 Dataset>
+│   └──  'num-lands' <HDF5 Dataset>
+├── 'proj-para'
+│   ├── 'extrinsic' <HDF5 Dataset>
+│   ├── 'intrinsic' <HDF5 Dataset>
+│   ├── 'num-cols' <HDF5 Dataset>
+│   ├── 'num-rows' <HDF5 Dataset>
+│   ├── 'pixel-col-spacing' <HDF5 Dataset>
+│   ├── 'pixel-row-spacing' <HDF5 Dataset>
 
+```
 
 
 
