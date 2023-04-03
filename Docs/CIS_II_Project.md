@@ -131,7 +131,7 @@ def call_syntheX()
 def call_xreg()
 	pass
 
-
+class data_container
 class LandmarkDetectionInput()
 class LandmarkDetectionOutput()
 class RegiInput()
