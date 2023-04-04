@@ -131,7 +131,7 @@ def call_syntheX()
 def call_xreg()
 	pass
 
-
+class data_container
 class LandmarkDetectionInput()
 class LandmarkDetectionOutput()
 class RegiInput()
@@ -194,3 +194,14 @@ Real-time integration for 2d3d registration
 
 Implementation for submodules is done, which is our minimum deliverable, now the integration part is done either, and according to our timeline, we are wirting for the tutorials and documentations for others to use our software. We also on our way of trying to pack everything into a pip package so that everyone else can easily download it and use it.
 
+
+
+# [Update Log]
+
+Mar 27, 2023
+
+- integrate into a full pip package:
+  - method 1: instruction for installing the xReg aside
+  - method 2: integrate the binary of xReg into a pipy work flow and make wheels of building it
+- colab script to demonstrate how the code works, include one image
+- loop-x image frame, navigation frame, ct and x-ray image frame : RAS/LAS
