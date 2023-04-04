@@ -164,9 +164,9 @@ Figs mush come with proper citation right below where you use it.
 
 # [Weekly Meeting]
 
-Nifty file use this for now. Don't modify all the data. Segmentation, landmark in json format.
+Nifty file uses this for now. Don't modify all the data. Segmentation, a landmark in JSON format.
 
-Intensity-based method can gain more control on the edge of the bone.
+Intensity-based method can gain more control over the edge of the bone.
 
 
 
@@ -190,5 +190,7 @@ Talk about how many milestones have been done.
 
 Progress: 
 
-Modified key milestones a little bit. Implementation for submodules are done, which is our minimum deliverable, now I'm working on the integration part, and according to our timeline, we should get it done by the end of march.
+Real-time integration for 2d3d registration
+
+Implementation for submodules is done, which is our minimum deliverable, now the integration part is done either, and according to our timeline, we are wirting for the tutorials and documentations for others to use our software. We also on our way of trying to pack everything into a pip package so that everyone else can easily download it and use it.
 
