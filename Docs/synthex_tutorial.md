@@ -108,7 +108,7 @@ The procedure has a single parameter called k that refers to the number of group
 
 # Technical Approach
 
-1. import the image and store it into the given h5 format
+1. import the image and store it into the given h5 format : [data specification](https://github.com/jeremyzz830/CISII-Repo/blob/main/Docs/Data%20Specification.md)
 2. using that to get a prediction out of the model with given checkpoint
 3. get the landmarks pixel coordinate out of the results
 
