@@ -22,8 +22,6 @@ This file is used for introducing all the componnets of SyntheX in detail and ho
 
 [Here](https://arxiv.org/pdf/2206.06127.pdf) you can find the link to the paper on arXiv
 
-
-
 On the task of **anatomical landmark detection** and **anatomy segmentation** of <u>hip X-ray</u>, Gao tested the most commonly used domain generalization tech, i.e., adaptation and randomization.
 
 ## Data
@@ -125,6 +123,78 @@ If you want different resolultions, they are in ds_3x and ds_8x
 using yy_checkpoint_net_20.pt should be good enough.
 
 
+
+# User Tutorial
+
+## Case 1: 
+
+**2D Landmark Detection on Real X-ray Image**
+
+### Model Inference Results to File
+
+We use the following script to write network model inference results to a h5 file:
+
+```
+# This example testing is performed on the controlled real data
+RealDataH5=/data/hip_imaging/controlled_study/real.h5
+RealLabelH5=/data/hip_imaging/controlled_study/real_label.h5
+
+# Patient ID
+PatID=1
+
+# Inference result output h5
+InferenceH5=/data/hip_imaging/controlled_study/sim2real_example/spec_${PatID}_sim2real.h5
+
+# Network Checkpoint Model
+ModelCheckpoint=/data/hip_imaging/controlled_study/sim2real_example/yy_check_net${PatID}_50.pt
+
+python test_ensemble.py ${RealDataH5} ${RealLabelH5} ${InferenceH5}
+--pats ${PatID}
+--nets ${ModelCheckpoint}
+```
+
+This example command refers to 1 fold testing. We performed 6-fold training/testing by alternating the patient ID from 1 to 6 as leave-one-out. The patient IDs are updated accordingly.
+
+### Export Detection Results to CSV Files
+
+#### Landmark
+
+```
+# Patient ID
+PatID=1
+
+# Inference result output h5
+InferenceH5=/data/hip_imaging/controlled_study/sim2real_example/spec_${PatID}_sim2real.h5
+
+# Output Landmark CSV File
+LandmarkCSV=/data/hip_imaging/controlled_study/sim2real_example/spec_${patID}_sim2real_lands.csv
+
+python est_lands_csv.py ${InferenceH5}
+nn-heats
+--use-seg nn-segs
+--pat ${PatID}
+--out ${LandmarkCSV}
+```
+
+#### Segmentation
+
+```
+# Patient ID
+PatID=1
+
+RealLabelH5=/data/hip_imaging/controlled_study/real_label.h5
+
+# Inference result output h5
+InferenceH5=/data/hip_imaging/controlled_study/sim2real_example/spec_${PatID}_sim2real.h5
+
+# Output Segmentation Dice CSV File
+DiceCSV=/data/hip_imaging/controlled_study/sim2real_example/spec_${patID}_sim2real_dice.csv
+
+python compute_actual_dice_on_test.py ${RealLabelH5} ${InferenceH5}
+nn-segs
+${DiceCSV}
+${PatID}
+```
 
 
 

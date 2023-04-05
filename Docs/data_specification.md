@@ -1,4 +1,6 @@
-<h1 align="center">Develop Log</h1>
+<h1 align="center">Data Specification</h1>
+
+[TOC]
 
 This file documents all the necessary information about developing 
 
@@ -70,11 +72,11 @@ the virtual env has to be switched in advance to enable the package for reading 
 
 ### SyntheX Data Format
 
+#### HDF5
+
 The Hierarchical Data Format version 5 (HDF5), is **an open source file format that supports large, complex, heterogeneous data**. The HDF5 files use the suffix of h5.
 
 Python provides [h5py](https://docs.h5py.org/en/stable/) lib to process h5 files. In Python, h5 file can be loaded as an iteratively nested dictionary. The basic structure is called dataset, dataset can be accessed by [...] method, for example:
-
-
 
 example real.h5: Used as an input to syntheX from dicom images
 
@@ -109,12 +111,28 @@ example real.h5: Used as an input to syntheX from dicom images
 
 ```
 
+To access the dataset contained in 'land-06' label, we can simply:
+
+```python
+with h5py.File(FILE_NAME, "r") as f:
+  data = f['land-names']['land-06'][...]
+  print(data)
+```
+
+or
+
+```python	
+with h5py.File(FILE_NAME, "r") as f:
+  data = f['land-names\land-06'][...]
+  print(data)
+```
+
+pyh5 provides a way of loading h5 files as nested dictionary (key-value pairs) in python so that we can recursively access the data by specifying the keys.
 
 
 
 
-
-example real_label.h5: 
+example real_label.h5: Used as input for SyntheX to 
 
 ``` python
 ├── '01'
@@ -160,9 +178,9 @@ example real_label.h5:
 
 ```
 
+Note that, the same landmarks can have different naming rules in different softwares. For instance, some prefers "ANATOMY-side" version like "GSN-r", while others prefer "SIDE-ANATOMY" style like "R-GSN" although they stands for the same thing.
 
-
-name of the landmarks:
+name of the landmarks on pelvic:
 
 ```bash
 ['FH-l', 'FH-r', 'GSN-l', 'GSN-r', 'IOF-l', 'IOF-r', 'MOF-l', 'MOF-r', 'SPS-l', 'SPS-r', 'IPS-l', 'IPS-r', 'ASIS-l', 'ASIS-r']
@@ -198,11 +216,13 @@ name of the landmarks:
 ,86.5421371459961,195.70928955078125,-594.8851928710938,0,0,0,1,1,1,1,IS-l, , 
 ```
 
-Coordinate System tag is used to identify the
+Coordinate System tag is used to identify the type of the coordinate system used in the DICOM file. The DICOM coordinate system is the LPS (left-posterior-superior), meanwhile the RAS coordinate system is right-anterior-superior.
+
+The column 'id' and 'associatedNodeID' can be ignored in this case. In other words, these two columns can be either empty or some blank spaces.
 
 #### HDF5
 
-example the input of xreg: example1_1_pd_003.h5
+example the input of xreg: example1_1_pd_003.h5 contains the x-ray images and its corresponding 2D landmark locations.
 
 example1_1_pd_003.h5
 
