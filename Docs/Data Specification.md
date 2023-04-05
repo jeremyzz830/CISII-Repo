@@ -74,11 +74,6 @@ The Hierarchical Data Format version 5 (HDF5), is **an open source file format t
 
 Python provides [h5py](https://docs.h5py.org/en/stable/) lib to process h5 files. In Python, h5 file can be loaded as an iteratively nested dictionary. The basic structure is called dataset, dataset can be accessed by [...] method, for example:
 
-```python
-```
-
-
-
 
 
 example real.h5: Used as an input to syntheX from dicom images
