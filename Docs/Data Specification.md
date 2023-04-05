@@ -19,7 +19,7 @@ This file documents all the necessary information about developing
 
 
 
-- [ ] modularized classed to contain everything
+- [x] modularized classed to contain everything
 - [ ] environment compatibility check
 - [ ] integrate into a full pip package
 - [ ] colab script to demonstrate
@@ -30,7 +30,7 @@ This file documents all the necessary information about developing
 
 
 
-## Write ipynb file to read h5 file
+## Write ipynb script to read h5 file
 
 the virtual env has to be switched in advance to enable the package for reading h5, here are the steps of switching venv for jupyter notebook
 
@@ -66,9 +66,9 @@ the virtual env has to be switched in advance to enable the package for reading 
 
 
 
-## Data format
+## Data Format
 
-### HDF5 Data format
+### SyntheX Data Format
 
 The Hierarchical Data Format version 5 (HDF5), is **an open source file format that supports large, complex, heterogeneous data**. The HDF5 files use the suffix of h5.
 
@@ -80,32 +80,32 @@ example real.h5: Used as an input to syntheX from dicom images
 
 ``` python
 ├── '01'
-│    └──  'projs' <HDF5 Dataset>
+│    └── 'projs' <HDF5 Dataset>
 ├── '02'
 │    └── 'projs' <HDF5 Dataset>
 ├── '03'
-│   └── 'projs' <HDF5 Dataset>
+│    └── 'projs' <HDF5 Dataset>
 ├── '04'
-│    └──  'projs' <HDF5 Dataset>
+│    └── 'projs' <HDF5 Dataset>
 ├── '05'
 │    └── 'projs' <HDF5 Dataset>
 ├── '06'
-│    └──  'projs' <HDF5 Dataset>
-├── 'land-names'
-│   ├── 'land-00' <HDF5 Dataset>
-│   ├── 'land-01' <HDF5 Dataset>
-│   ├── 'land-02' <HDF5 Dataset>
-│   ├── 'land-03' <HDF5 Dataset>
-│   ├── 'land-05' <HDF5 Dataset>
-│   ├── 'land-06' <HDF5 Dataset>
-│   ├── 'land-07' <HDF5 Dataset>
-│   ├── 'land-08' <HDF5 Dataset>
-│   ├── 'land-09' <HDF5 Dataset>
-│   ├── 'land-10' <HDF5 Dataset>
-│   ├── 'land-11' <HDF5 Dataset>
-│   ├── 'land-12' <HDF5 Dataset>
-│   ├── 'land-13' <HDF5 Dataset>
-│   └──  'num-lands' <HDF5 Dataset>
+│    └── 'projs' <HDF5 Dataset>
+└── 'land-names'
+    ├── 'land-00' <HDF5 Dataset>
+    ├── 'land-01' <HDF5 Dataset>
+    ├── 'land-02' <HDF5 Dataset>
+    ├── 'land-03' <HDF5 Dataset>
+    ├── 'land-05' <HDF5 Dataset>
+    ├── 'land-06' <HDF5 Dataset>
+    ├── 'land-07' <HDF5 Dataset>
+    ├── 'land-08' <HDF5 Dataset>
+    ├── 'land-09' <HDF5 Dataset>
+    ├── 'land-10' <HDF5 Dataset>
+    ├── 'land-11' <HDF5 Dataset>
+    ├── 'land-12' <HDF5 Dataset>
+    ├── 'land-13' <HDF5 Dataset>
+    └── 'num-lands' <HDF5 Dataset>
 
 ```
 
@@ -150,13 +150,13 @@ example real_label.h5:
 │   ├── 'land-12' <HDF5 Dataset>
 │   ├── 'land-13' <HDF5 Dataset>
 │   └──  'num-lands' <HDF5 Dataset>
-├── 'proj-para'
-│   ├── 'extrinsic' <HDF5 Dataset>
-│   ├── 'intrinsic' <HDF5 Dataset>
-│   ├── 'num-cols' <HDF5 Dataset>
-│   ├── 'num-rows' <HDF5 Dataset>
-│   ├── 'pixel-col-spacing' <HDF5 Dataset>
-│   ├── 'pixel-row-spacing' <HDF5 Dataset>
+└── 'proj-para'
+    ├── 'extrinsic' <HDF5 Dataset>
+    ├── 'intrinsic' <HDF5 Dataset>
+    ├── 'num-cols' <HDF5 Dataset>
+    ├── 'num-rows' <HDF5 Dataset>
+    ├── 'pixel-col-spacing' <HDF5 Dataset>
+    └── 'pixel-row-spacing' <HDF5 Dataset>
 
 ```
 
@@ -170,12 +170,6 @@ name of the landmarks:
 
 
 
-
-
-
-
-
-
 ### xReg Data Format
 
 #### FCSV
@@ -183,8 +177,30 @@ name of the landmarks:
 'id' and 'associatedNodeID' are not necessary for xReg, it should be some labels that come from the landmark annotation process in 3DSlicer
 
 ```
-
+# Markups fiducial file version = 5.0
+# CoordinateSystem = LPS
+# columns = id,x,y,z,ow,ox,oy,oz,vis,sel,lock,label,desc,associatedNodeID
+,33.51913833618164,91.95581817626953,-614.0459594726562,0,0,0,1,1,1,1,SPS-r, , 
+,32.69633865356445,113.62252807617188,-635.4973754882812,0,0,0,1,1,1,1,IPS-r, , 
+,-16.04508399963379,162.6339874267578,-640.7818603515625,0,0,0,1,1,1,1,IOF-r, , 
+,-23.665447235107422,173.18283081054688,-545.8438110351562,0,0,0,1,1,1,1,GSN-r, , 
+,-30.927318572998047,190.9574432373047,-649.4568481445312,0,0,0,1,1,1,1,IT-r, , 
+,10.974197387695312,124.45952606201172,-622.6507568359375,0,0,0,1,1,1,1,MOF-r, , 
+,-59.7931022644043,81.35031127929688,-517.1331176757812,0,0,0,1,1,1,1,ASIS-r, , 
+,-14.3635835647583,188.99717712402344,-591.510986328125,0,0,0,1,1,1,1,IS-r, , 
+,43.9493408203125,90.42715454101562,-614.400146484375,0,0,0,1,1,1,1,SPS-l, , 
+,43.29179763793945,116.68962097167969,-636.6901245117188,0,0,0,1,1,1,1,IPS-l, , 
+,86.10452270507812,165.24656677246094,-641.2273559570312,0,0,0,1,1,1,1,IOF-l, , 
+,102.52001953125,176.56101989746094,-548.27294921875,0,0,0,1,1,1,1,GSN-l, , 
+,100.10421752929688,193.62289428710938,-652.7132568359375,0,0,0,1,1,1,1,IT-l, , 
+,62.239341735839844,123.50407409667969,-623.759521484375,0,0,0,1,1,1,1,MOF-l, , 
+,141.8777618408203,87.38057708740234,-525.8892822265625,0,0,0,1,1,1,1,ASIS-l, , 
+,86.5421371459961,195.70928955078125,-594.8851928710938,0,0,0,1,1,1,1,IS-l, , 
 ```
+
+Coordinate System tag is used to identify the
+
+#### HDF5
 
 example the input of xreg: example1_1_pd_003.h5
 
@@ -230,10 +246,6 @@ example1_1_pd_003.h5
 └── 'proj-002'
     └── # same as proj-000
 ```
-
-
-
-<ul id="myUL">  <li><span class="caret">example1_1_pd_003.h5</span>    <ul class="nested">      <li>'num-proj'</li>      <li>'proj-000'</li>      <li><span class="caret">'proj-001'</span>        <ul class="nested">          <li>Black Tea</li>          <li>White Tea</li>          <li><span class="caret">Green Tea</span>            <ul class="nested">              <li>Sencha</li>              <li>Gyokuro</li>              <li>Matcha</li>              <li>Pi Lo Chun</li>            </ul>          </li>        </ul>      </li>    </ul>  </li></ul>
 
 ```python
 Keys: <KeysViewHDF5 ['num-projs', 'proj-000', 'proj-001', 'proj-002']>
