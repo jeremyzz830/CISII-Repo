@@ -205,3 +205,11 @@ Mar 27, 2023
   - method 2: integrate the binary of xReg into a pipy work flow and make wheels of building it
 - colab script to demonstrate how the code works, include one image
 - loop-x image frame, navigation frame, ct and x-ray image frame : RAS/LAS
+
+# [Update Log]
+Apr 17, 2023
+
+- fix all the bugs
+- have a main script so that people can run the file from terminal, with --help functionality
+- have a colab notebook with xreg installed so that people can run it online
+- write a readme and add some interactive warning and errors if ct segmentation is not provided, give a direct link to the total segmentator would be perfect.
