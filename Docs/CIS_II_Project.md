@@ -210,6 +210,7 @@ Mar 27, 2023
 Apr 17, 2023
 
 - fix all the bugs
+- - can have xreg installed aside
 - have a main script so that people can run the file from terminal, with --help functionality
 - have a colab notebook with xreg installed so that people can run it online
 - write a readme and add some interactive warning and errors if ct segmentation is not provided, give a direct link to the total segmentator would be perfect.
