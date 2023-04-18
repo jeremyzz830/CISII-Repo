@@ -222,6 +222,8 @@ The column 'id' and 'associatedNodeID' can be ignored in this case. In other wor
 
 #### HDF5
 
+xreg provides [official explanation about its h5 file format](https://github.com/rg2/xreg/wiki/Projection-Data-HDF5-File)
+
 example the input of xreg: example1_1_pd_003.h5 contains the x-ray images and its corresponding 2D landmark locations.
 
 example1_1_pd_003.h5
