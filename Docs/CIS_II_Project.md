@@ -214,3 +214,13 @@ Apr 17, 2023
 - have a main script so that people can run the file from terminal, with --help functionality
 - have a colab notebook with xreg installed so that people can run it online
 - write a readme and add some interactive warning and errors if ct segmentation is not provided, give a direct link to the total segmentator would be perfect.
+
+
+
+# [Update Log]
+
+Apr 20, 2023
+
+automatic pipeline for 2d3d registration.
+
+Published our python package. Working on writing tutorials and documentations for users and developers. That is the last part of our expected deliverables. Our maximum deliverable is the visualization part, which is also in progress.
