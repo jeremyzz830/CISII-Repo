@@ -214,3 +214,13 @@ Apr 17, 2023
 - have a main script so that people can run the file from terminal, with --help functionality
 - have a colab notebook with xreg installed so that people can run it online
 - write a readme and add some interactive warning and errors if ct segmentation is not provided, give a direct link to the total segmentator would be perfect.
+
+
+# [Update Log]
+
+Apr 24, 2023
+
+- command line tool, create a dir for the result, if not provided, create a folder with the image names
+- a json file that contains camera parameters, errors, results
+- emphasis for russ, installation and usage demo for the package, comparing to the old complicated way of doing the whole process.
+- update readme file and the colab stuff
