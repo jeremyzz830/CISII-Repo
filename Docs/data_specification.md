@@ -168,7 +168,7 @@ example real_label.h5: Used as input for SyntheX to
 │   ├── 'land-12' <HDF5 Dataset>
 │   ├── 'land-13' <HDF5 Dataset>
 │   └──  'num-lands' <HDF5 Dataset>
-└── 'proj-para'
+└── 'proj-params'
     ├── 'extrinsic' <HDF5 Dataset>
     ├── 'intrinsic' <HDF5 Dataset>
     ├── 'num-cols' <HDF5 Dataset>
