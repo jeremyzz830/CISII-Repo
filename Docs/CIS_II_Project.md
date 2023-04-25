@@ -216,7 +216,6 @@ Apr 17, 2023
 - write a readme and add some interactive warning and errors if ct segmentation is not provided, give a direct link to the total segmentator would be perfect.
 
 
-<<<<<<< HEAD
 
 # [Update Log]
 
@@ -225,7 +224,7 @@ Apr 20, 2023
 automatic pipeline for 2d3d registration.
 
 Published our python package. Working on writing tutorials and documentations for users and developers. That is the last part of our expected deliverables. Our maximum deliverable is the visualization part, which is also in progress.
-=======
+
 # [Update Log]
 
 Apr 24, 2023
@@ -234,4 +233,3 @@ Apr 24, 2023
 - a json file that contains camera parameters, errors, results
 - emphasis for russ, installation and usage demo for the package, comparing to the old complicated way of doing the whole process.
 - update readme file and the colab stuff
->>>>>>> refs/remotes/origin/main
