@@ -233,3 +233,13 @@ Apr 24, 2023
 - a json file that contains camera parameters, errors, results
 - emphasis for russ, installation and usage demo for the package, comparing to the old complicated way of doing the whole process.
 - update readme file and the colab stuff
+
+# [Update Log]
+
+May 09, 2023
+- try oprncv pnp for extrinsic 
+- put the result in the result folder
+- make command line prompt short
+- publish pip
+- write up the tutorial for using in code
+- change the intermediate file names with the input
