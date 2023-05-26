@@ -243,3 +243,11 @@ May 09, 2023
 - publish pip
 - write up the tutorial for using in code
 - change the intermediate file names with the input
+
+# [publish pypi package]
+May 12, 2023
+```bash
+python3 -m build
+python3 -m pip install --upgrade twine
+twine upload dist/[Your Package Version] 
+```
