@@ -168,7 +168,7 @@ example real_label.h5: Used as input for SyntheX to
 │   ├── 'land-12' <HDF5 Dataset>
 │   ├── 'land-13' <HDF5 Dataset>
 │   └──  'num-lands' <HDF5 Dataset>
-└── 'proj-para'
+└── 'proj-params'
     ├── 'extrinsic' <HDF5 Dataset>
     ├── 'intrinsic' <HDF5 Dataset>
     ├── 'num-cols' <HDF5 Dataset>
@@ -221,6 +221,8 @@ Coordinate System tag is used to identify the type of the coordinate system used
 The column 'id' and 'associatedNodeID' can be ignored in this case. In other words, these two columns can be either empty or some blank spaces.
 
 #### HDF5
+
+xreg provides [official explanation about its h5 file format](https://github.com/rg2/xreg/wiki/Projection-Data-HDF5-File)
 
 example the input of xreg: example1_1_pd_003.h5 contains the x-ray images and its corresponding 2D landmark locations.
 

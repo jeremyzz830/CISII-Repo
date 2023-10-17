@@ -206,6 +206,15 @@ Mar 27, 2023
 - colab script to demonstrate how the code works, include one image
 - loop-x image frame, navigation frame, ct and x-ray image frame : RAS/LAS
 
+# [Update Log]
+Apr 17, 2023
+
+- fix all the bugs
+- - can have xreg installed aside
+- have a main script so that people can run the file from terminal, with --help functionality
+- have a colab notebook with xreg installed so that people can run it online
+- write a readme and add some interactive warning and errors if ct segmentation is not provided, give a direct link to the total segmentator would be perfect.
+
 
 
 # [Update Log]
@@ -218,3 +227,35 @@ a json file that contains camera parameters, errors, results
 
 emphasis for russ, installation and usage demo for the package, comparing to the old complicated way of doing the whole process.
 
+Apr 20, 2023
+
+automatic pipeline for 2d3d registration.
+
+Published our python package. Working on writing tutorials and documentations for users and developers. That is the last part of our expected deliverables. Our maximum deliverable is the visualization part, which is also in progress.
+
+# [Update Log]
+
+Apr 24, 2023
+
+- command line tool, create a dir for the result, if not provided, create a folder with the image names
+- a json file that contains camera parameters, errors, results
+- emphasis for russ, installation and usage demo for the package, comparing to the old complicated way of doing the whole process.
+- update readme file and the colab stuff
+
+# [Update Log]
+
+May 09, 2023
+- try oprncv pnp for extrinsic 
+- put the result in the result folder
+- make command line prompt short
+- publish pip
+- write up the tutorial for using in code
+- change the intermediate file names with the input
+
+# [publish pypi package]
+May 12, 2023
+```bash
+python3 -m build
+python3 -m pip install --upgrade twine
+twine upload dist/[Your Package Version] 
+```
