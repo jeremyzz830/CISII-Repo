@@ -205,3 +205,16 @@ Mar 27, 2023
   - method 2: integrate the binary of xReg into a pipy work flow and make wheels of building it
 - colab script to demonstrate how the code works, include one image
 - loop-x image frame, navigation frame, ct and x-ray image frame : RAS/LAS
+
+
+
+# [Update Log]
+
+Apr 24, 2023
+
+command line tool, create a dir for the result, if not provided, create a folder with the image names
+
+a json file that contains camera parameters, errors, results
+
+emphasis for russ, installation and usage demo for the package, comparing to the old complicated way of doing the whole process.
+
